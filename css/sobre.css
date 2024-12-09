@@ -1,0 +1,172 @@
+.sobre {
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.cabeca {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.cabeca h1 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+
+.cabeca h1::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background: rgb(44, 203, 179);
+    ;
+}
+
+.textocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.textosobre {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+
+.textosobre p {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.textosobre h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.sobreimg {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+
+.sobreimg img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider2 {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+
+.sliderimgs2 {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0,75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 20px;
+}
+
+.sliderimgs2 img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.slidernav2{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 42%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slidernav2 a{
+    width: 1rem;
+    height: 1rem;
+    transform: scale(1);
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    text-align: center;
+    transition: opacity ease 250ms;
+}
+
+.slidernav2 a:hover{
+    opacity: 1;
+}
+
+@media (max-width: 680px) {
+    .slidernav2 a {
+        transition: .50s ease;
+        transform: scale(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabeca h1 {
+        font-size: 45px;
+        margin-top: 35px;
+    }
+
+    .sobre {
+        margin: 0px;
+    }
+
+    .textocontainer {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
+    .textosobre {
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+    .textosobre h2 {
+        font-size: 30px;
+    }
+
+    .textosobre p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.9;
+    }
+
+    .sobreimg {
+        width: 100%;
+    }
+}

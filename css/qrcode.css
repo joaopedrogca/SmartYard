@@ -1,0 +1,29 @@
+section.container2{
+    margin-bottom: 150px;
+    margin-top: 0px;
+}
+
+.slider2 {
+    position: relative;
+    max-width: 100rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slider2 h1{
+    font-size: 30px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.qrimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}

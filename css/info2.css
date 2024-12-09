@@ -1,0 +1,147 @@
+section .info2 {
+    padding: 0 19%;
+}
+
+
+.info2 {
+    height: 100%;
+    width: 100%;
+    min-height: 70vh;
+    background: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 13rem;
+}
+
+.info2-texto h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.info2-texto h1 {
+    font-size: 60px;
+    line-height: 1;
+    color: black;
+    margin: 0 0 45px;
+}
+
+.info2-texto p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.info2-texto a {
+    display: inline-block;
+    color: white;
+    background: rgb(19, 147, 174);
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: all .55s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
+
+.info2-texto a:hover {
+    transform: translateX(8px);
+}
+
+.imginfo2 {
+    user-select: none;
+    pointer-events: none;
+}
+
+.imginfo2 img {
+    width: auto;
+    height: 550px;
+}
+
+
+@media (max-width: 1460px) {
+    section .info2 {
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+/*Responsividade de acordo com o Layout de 1340px*/
+@media (max-width: 1340px) {
+    .imginfo2 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .info2-texto h1{
+        font-size: 50px;
+        margin: 0 0 30px;
+    }
+    
+    section .info2 {
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .info2-texto {
+        padding-top: 115px;
+    }
+
+    .imginfo2 {
+        text-align: center;
+    }
+
+    .imginfo2 img {
+        width: 560px;
+        height: auto;
+    }
+
+    .info2 {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1195px) {
+    section.info2 {
+        transition: .2s;
+    }
+
+    .info2-texto{
+        padding: 0 3%;
+        padding-top: 60px;
+    }
+
+    .imginfo2 {
+        text-align: center;
+        padding: 0 3%;
+    }
+
+    .imginfo2 img {
+        width: 400px;
+        height: auto;
+    }
+
+    .info2 {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Responsividade de acordo com o Layout de 680px*/
+@media (max-width: 680px) {
+    .imginfo2 img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartYard</title>
+
+    <!--LinkCss-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/geral.css">
+    <link rel="stylesheet" type="text/css" href="css/icones.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/responsividade.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/info2.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/qrcode.css">
+    <link rel="stylesheet" type="text/css" href="css/sobre.css">
+
+    <!--LinkBoxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--LinkRemixicons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+    <!--Icon-->
+    <link rel="icon" href="img/IconWEB.png">
+
+    <!--LinkGoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <a class="logo-texto">SmartYard</a>
+        <ul class="navigation">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Arduino</a></li>
+            <li><a href="#">Ideia</a></li>
+            <li><a href="#">Metas</a></li>
+            <li><a href="#">Contato</a></li>
+            <button class="login"><i class="ri-user-line"></i></button>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!--InfoHome-->
+    <section class="info">
+        <div class="info-texto">
+            <h5>Agricultura inteligente!</h5>
+            <h4>Desenvolvido em:</h4>
+            <h1>Arduino</h1>
+            <p>A SmartYard chegou para revolucionar os métodos obsoletos de irrigação manual. <br>Com Arduino e
+                Firebase, o
+                jardim inteligente atenderá todas as suas expectativas!
+            </p>
+            <a href="#onu">Objetivos</a>
+            <a href="https://getbootstrap.com" target="_blank" class="botao"><i
+                    class="ri-bootstrap-line"></i>Bootstrap</a>
+        </div>
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+    </section>
+
+    <!--Icones-->
+    <div class="icones">
+        <span id="instagramID"><i class="ri-instagram-line"></i></span>
+        <span id="twitterID"><i class="ri-twitter-x-line"></i></span>
+        <span id="githubID"><i class="ri-github-fill"></i></span>
+    </div>
+
+    <!--Botão Seta QRCODE-->
+    <div class="seta">
+        <a href="#qr"><i class="ri-arrow-down-circle-line"></i></a>
+    </div>
+
+    <!--Login-->
+    <div class="forms">
+        <span class="fechar"><i class="ri-close-line"></i></span>
+        <div class="formsLog login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input">
+                    <span class="iconesLog"><i class="ri-mail-line"></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input">
+                    <span class="iconesLog"><i class="ri-lock-line"></i></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="lembreLog">
+                    <label><input type="checkbox">Lembre-se</label>
+                    <a href="#">Esqueceu da senha?</a>
+                </div>
+                <button onclick="login()" class="btnSub">login</button>
+                <div class="registro">
+                    <p>Não tem uma conta?<a href="#" class="regLink">Registre-se</a></p>
+                </div>
+            </form>
+        </div>
+        <!--Registro-->
+        <div class="formsLog registro">
+            <h2>Registro</h2>
+            <form action="#">
+                <div class="input">
+                    <span class="iconesLog"><i class="ri-user-3-line"></i></span>
+                    <input type="text" required id="username">
+                    <label>Usuário</label>
+                </div>
+                <div class="input">
+                    <span class="iconesLog"><i class="ri-mail-line"></i></span>
+                    <input type="email" required id="email">
+                    <label>Email</label>
+                </div>
+                <div class="input">
+                    <span class="iconesLog"><i class="ri-lock-line"></i></span>
+                    <input type="password" required id="password">
+                    <label>Senha</label>
+                </div>
+                <button onclick="register()" id="register" class="btnSub">Registre-se</button>
+                <div class="registro">
+                    <p>Já tem uma conta?<a href="#" class="loginLink">Entrar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Carrossel-->
+    <section class="container">
+        <div class="slider">
+            <div class="sliderimgs">
+                <img id="1" alt="" src="img/1.png">
+                <img id="2" alt="" src="img/2.png">
+                <img id="3" alt="" src="img/3.png">
+            </div>
+            <div class="slidernav">
+                <a href="#1"></a>
+                <a href="#2"></a>
+                <a href="#3"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--info2-->
+    <section id="onu" class="info2">
+        <div class="info2-texto">
+            <h4>Salve recursos hídricos</h4>
+            <h1>Chega de desperdício!</h1>
+            <p>O nosso projeto tem o foco principal na resolução de uma das metas da Agenda 2030 da <b>ONU</b>, o
+                desenvolvimento sustentável, ou seja, com a posse do nosso protótipo, você será capaz de fazer a
+                diferença e mediar a quantidade de água gasta no cultivo autônomo. <br>Apoie nossa causa e venha fazer
+                parte dessa jornada!</p>
+            <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">ONU: Agenda 2030</a>
+        </div>
+        <div class="imginfo2">
+            <img src="img/bucket.png">
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div class="cabeca">
+            <h1>Sobre nós</h1>
+        </div>
+        <div class="textocontainer">
+            <div class="textosobre">
+                <h2>Somos a SmartYard!</h2>
+                <p>Nós começamos o projeto com o intuito de fazer algo diferente, percebemos que atualmente a tecnologia
+                    é
+                    integrada ao sistema agrônomo, mas como poderíamos nos destacar?<br>Para isso fizemos a
+                    <b>SmartYard</b>, uma
+                    empresa que produziu um protótipo Arduino custo-beneficio para irrigar automaticamente suas
+                    plantações e
+                    ainda mostrar as informações pertinentes na tela do seu celular.
+                </p>
+            </div>
+        </div>
+        <div class="slider2">
+            <div class="sliderimgs2">
+                <img id="11" alt="" src="img/pabloCR.jpg">
+                <img id="22" alt="" src="img/fernandoCR.jpg">
+                <img id="33" alt="" src="img/alanCR.jpg">
+                <img id="44" alt="" src="img/jpCR.jpg">
+                <img id="55" alt="" src="img/luizCR.jpg">
+            </div>
+            <div class="slidernav2">
+                <a href="#11"></a>
+                <a href="#22"></a>
+                <a href="#33"></a>
+                <a href="#44"></a>
+                <a href="#55"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Qrcode-->
+    <section class="container2" id="qr">
+        <div class="slider2">
+            <h1>Baixe nosso aplicativo!</h1>
+            <div class="qrimg">
+                <img src="img/qr.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="waves" id="bucket">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="logosimples">
+            <img src="img/logosimples.png">
+        </div>
+        <div class="copyright">
+            <p>© 2023 SmartYard, todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!--LinkAnimação-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--LinkScript-->
+    <script src="json/forms.js"></script>
+    <script src="json/onclick.js"></script>
+    <script src="json/animation.js"></script>
+</body>
+
+</html>

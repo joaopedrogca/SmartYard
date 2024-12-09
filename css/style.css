@@ -1,0 +1,82 @@
+.info {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, rgb(158, 200, 65) 0%, rgb(158, 215, 85) 28.53%, rgb(19, 147, 174) 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 13rem;
+}
+
+.info-texto h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.info-texto h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.info-texto h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info-texto p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.info-texto a {
+    display: inline-block;
+    color: white;
+    background: rgb(44, 203, 179);
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.info-texto a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.info-texto a.botao {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.info-texto a.botao i {
+    vertical-align: center;
+    margin-right: 5px;
+}
+
+.logo {
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.logo img {
+    width: auto;
+    height: 550px;
+}
